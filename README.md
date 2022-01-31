@@ -1,44 +1,109 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Available Scripts
+# Ecommerce Redux Refactor
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+This application was designed to refactor an ecommerce website that was managing its state using React's ContextAPI. The objective was to convert the application to manage its state using Redux instead. This involves changing how the state and store are set up within the app along with their reducers.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Deployed Application
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+https://rocky-stream-73248.herokuapp.com/
 
-### `npm test`
+## Table of Contents
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* [Screenshots](#screenshots)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Tech Stack](#tech-stack)
+* [License](#license)
+* [Questions](#questions)
 
-### `npm run build`
+## Screenshots
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Gif of Signup](./server/assets/signup.gif)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+![Gif of Functionality](./server/assets/functionality.gif)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Gif of Checkout](./server/assets/checkout.gif)
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+There are a few different steps to getting this application installed and ready to go on your local machine.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Step 1: Install MongoDB if you haven't already. Please refer to online documents to get MongoDB up and running (MongoDB Official Installation Walkthroughs for Windows/Mac/Linux)
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Step 2: Clone this repo onto your local machine.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Step 3: Navigate to this project's root directory in your terminal and run the following installation command
 
-## Learn More
+```
+npm install
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
+
+Continuing from the installation instructions, the following steps will help you use this application.
+
+Step 4: Seed the application's data by running the following command at the root of the project directory:
+
+```
+npm run seed
+```
+
+Step 5: After installing all dependencies and seeding the data, you may invoke the application using:
+
+```
+npm run develop
+```
+
+This will open the front end and back end concurrently (client, server).
+
+Step 6: Navigate to localhost:3000 in order to view the application locally.
+
+Step 7: Navigate to localhost:3001/graphql in order to access the back end through GraphQL and test queries and mutations
+
+## Tech Stack
+
+- MongoDB
+- Mongoose ODM
+- Express.js
+- React
+- React-Router-Dom
+- React-Scripts
+- React-Boostrap
+- Redux
+- Node.js
+- Apollo Client
+- Apollo-Server-Express
+- GraphQL
+- Nodemon
+- JSON Web Tokens
+
+## License
+
+Copyright 2022 Alex Sadrgilany
+
+Permission is hereby granted, free of charge, to any person obtaining a copy 
+of this software and associated documentation files (the "Software"), to deal 
+in the Software without restriction, including without limitation the rights to 
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the 
+Software, and to permit persons to whom the Software is furnished to do so, 
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all 
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, 
+INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A 
+PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT 
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF 
+CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE 
+OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+## Questions
+
+[My GitHub Profile](https://github.com/asadg7)
+
+To reach me with questions, please email: asadrgilany7@gmail.com
